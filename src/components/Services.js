@@ -19,7 +19,7 @@ const Services = () => {
             //   </div>
             // </article>
 
-            <Service id={id} icon={icon} title={title} text={text} />
+            <Service icon={icon} title={title} text={text} key={id} />
           );
         })}
       </div>

@@ -1,6 +1,6 @@
-const Service = ({ id, icon, title, text }) => {
+const Service = ({ icon, title, text }) => {
   return (
-    <article className="service" key={id}>
+    <article className="service">
       <span className="service-icon">
         <i className={icon}></i>
       </span>
