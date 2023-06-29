@@ -7,7 +7,7 @@ const Services = () => {
     <section className="section services" id="services">
       <Title title="our" subtitle="services" />
       <div className="section-center services-center">
-        {services.map(({ id, icon, title, text }) => {
+        {services.map((service) => {
           return (
             // <article className="service" key={id}>
             //   <span className="service-icon">
@@ -19,7 +19,7 @@ const Services = () => {
             //   </div>
             // </article>
 
-            <Service icon={icon} title={title} text={text} key={id} />
+            <Service key={service.id} {...service} />
           );
         })}
       </div>
